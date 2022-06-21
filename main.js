@@ -13,7 +13,7 @@
 // }
 // const newUser = new Student();
 
-1 - 8;
+1 - 13;
 class Student {
   constructor(name, grade, id) {
     this.name = name;
@@ -43,10 +43,13 @@ class HighSchoolStudent extends Student {
     this.phone = phone;
     this.listGrades = listGrades;
   }
+  printToLog(){
+    super.printToLog();
+    console.log("hello");
+  }
 }
 let highSchoolStu = new HighSchoolStudent("david",8,295643211,088977657,[98,87,65,45,90,100]);
 console.log(highSchoolStu);
-9-11
 
 class JuniorHighSchool extends Student {}
 const dawit = new JuniorHighSchool("lior",12,314253665);
