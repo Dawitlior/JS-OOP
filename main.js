@@ -46,7 +46,7 @@ class HighSchoolStudent extends Student {
 }
 let highSchoolStu = new HighSchoolStudent("david",8,295643211,088977657,[98,87,65,45,90,100]);
 console.log(highSchoolStu);
-9.
+9-11
 
 class JuniorHighSchool extends Student {}
 const dawit = new JuniorHighSchool("lior",12,314253665);
