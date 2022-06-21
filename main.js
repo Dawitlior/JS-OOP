@@ -44,8 +44,8 @@ class HighSchoolStudent extends Student {
     this.listGrades = listGrades;
   }
   printToLog(){
-    super.printToLog();
     console.log("hello");
+    super.printToLog();
   }
 }
 let highSchoolStu = new HighSchoolStudent("david",8,295643211,088977657,[98,87,65,45,90,100]);
