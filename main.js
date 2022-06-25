@@ -21,7 +21,7 @@ class Student {
     this.id = id;
   }
   printToLog() {
-    console.log(`first name:${this.name}grade:${this.grade}id:${this.id}`);
+  console.log(`first name:${this.name},grade:${this.grade},id:${this.id}`);
   }
 }
 let firstShow = new Student("lior", 12, 344223456);
@@ -61,3 +61,30 @@ class JuniorHighSchool extends Student {}
 const dawit = new JuniorHighSchool("lior", 12, 314253665);
 console.log(dawit);
 dawit.printToLog();
+
+class BestOfStudents extends Student {
+  constructor(name, grade, id, phone, eyeColor, hight) {
+    super(name, grade, id);
+    this.phone = phone;
+    this.eyeColor = eyeColor;
+    this.hight = hight;
+  }
+}
+const someShow = new BestOfStudents("lior",12,299833993,0546775643,"green",1.84);
+console.log(someShow);
+
+class SmartestStudent extends BestOfStudents{
+  constructor(name, grade, id, phone, eyeColor, hight,isPastTest,gradesList){
+    super(name, grade, id, phone, eyeColor, hight);
+    this.isPastTest = isPastTest;
+    this.gradesList = gradesList;
+  }
+}
+
+const someShow1 = new SmartestStudent("lior",14,299788433,057674211,"green",1.84,true,[91,95,87,79,83,97,100]);
+console.log(someShow1);
+
+class AnotherSmartStudent extends SmartestStudent{}
+const someShow2 = new AnotherSmartStudent("dawit",12,2222222,3333333,"red",189,true,[98,78,76,88,66,78,99])
+console.log(someShow2);
+someShow2.printToLog();
